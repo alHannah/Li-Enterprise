@@ -1,0 +1,119 @@
+* { /* universal selector */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("IMG/logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #F1F6F9;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.li_logo {
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20em;
+    border: 1px solid #F1F6F9;
+}
+
+#page {
+    background: linear-gradient(to bottom, rgba(129, 125, 121, 0.401), rgba(210, 205, 196, 0));
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 150px;
+}
+
+#page .nav{ /* applied under the bracket */
+    margin: 0em 1em 0em 2em;
+}
+
+#page #login {
+    margin-left: 20em;
+    margin-right: 3em;
+}
+
+/*The codes above apply to all pages */
+
+/* LOGIN PAGE */
+
+.login_page > #login {  /* apply in child */
+    border-bottom: 2px solid #F1F6F9;
+    margin-left: 20em;
+}
+
+.login_page > #contact_us {
+    margin-right: 0;
+}
+
+/* HOME PAGE */
+
+.home_productreview {
+    background-image: linear-gradient(to top, rgba(129, 125, 121, 0), rgba(129, 125, 121, 0.401),rgba(129, 125, 121, 0));
+    height: 600px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #F1F6F9;
+    font-size: 34px;
+}
+
+.check {
+    background-color: #31304D;
+    height: 80px;
+    width: 150px;
+    font-size: 24px;
+    color: #F1F6F9;
+}
+
+.review {
+    width: 600px;
+}
+
+.home_page #home { /* anchor line */
+    border-bottom: 2px solid #F1F6F9;
+}
+
+/* PRODUCT PAGE */
+
+.product_categories {
+    background-image: linear-gradient(to top, rgba(129, 125, 121, 0), rgba(129, 125, 121, 0.401),rgba(129, 125, 121, 0));
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_categories > .nav {
+    margin: 2.5em;
+    font-size: 29px;
+}
+
+.product_page #products { /* anchor line */
+    border-bottom: 2px solid #F1F6F9;
+}
+
+/* ABOUT PAGE */
+
+.about_page #about_us { /* anchor line */
+    border-bottom: 2px solid #F1F6F9;
+}
+
+/* CONTACT PAGE */
+
+.contact_page #contact_us { /* anchor line */
+    border-bottom: 2px solid #F1F6F9;
+}
