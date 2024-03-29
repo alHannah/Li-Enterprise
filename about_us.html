@@ -7,22 +7,28 @@
     <title>Li Enterprise | About Us</title>
 </head>
 <body>
-    <div class="about_page" id="page">
-        <img src="IMG/logo.jpg" alt="" class="li_logo" id="logo">
-        <nav>
+    <nav class="page_nav" id="pageNav">
+        <div class="nav-icon" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="nav-links">
+            <img src="IMG/logo.jpg" alt="Li_Enterprise_logo" class="li_logo" id="logo">
             <a href="home.html" class="nav" id="home">Home</a>
             <a href="products.html" class="nav" id="products">Products</a>
             <a href="about_us.html" class="nav" id="about_us">About Us</a>
             <a href="contact_us.html" class="nav" id="contact_us">Contact Us</a>
             <a href="index.html" class="nav" id="login">Login</a>
-        </nav>
-    </div>
-    <div class="home_productreview">
+        </div>
+    </nav>
+    <div class="home_productreview page_body">
         <img src="" alt="">
         <p class="review">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <input type="submit" name="" id="" class="check" value="Check">
     </div>
-    
+    <footer class="page_footer">Built and Designed by AlH Sim</footer>
+    <script src="script.js"></script>
 </body>
 </html>
