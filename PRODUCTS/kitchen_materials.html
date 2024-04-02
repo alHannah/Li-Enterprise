@@ -7,22 +7,80 @@
     <title>Li Enterprise | Kitchen Ware Materials</title>
 </head>
 <body>
-    <div class="product_page" id="page">
-        <img src="../IMG/logo.jpg" alt="" class="li_logo" id="logo">
-        <nav>
-            <a href="../home.html" class="nav" id="home">Home</a>
-            <a href="../products.html" class="nav" id="products">Products</a>
-            <a href="../about_us.html" class="nav" id="about_us">About Us</a>
-            <a href="../contact_us.html" class="nav" id="contact_us">Contact Us</a>
-            <a href="../index.html" class="nav" id="login">Login</a>
+    <div class="main">
+        <nav class="login page_nav" id="pageNav">
+            <div class="nav-icon" onclick="toggleNav()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-links">
+                <img src="../IMG/logo.jpg" alt="Li_Enterprise_logo" class="li_logo" id="logo">
+                <a href="../index.html" class="nav" id="home">Home</a>
+                <a href="../products.html" class="nav" id="products">Products</a>
+                <a href="../about_us.html" class="nav" id="about_us">About Us</a>
+                <a href="../contact_us.html" class="nav" id="contact_us">Contact Us</a>
+                <a href="../login.html" class="nav" id="login">Login</a>
+            </div>
         </nav>
-    </div>
-    <nav class="product_categories" id="">
-        <a href="steel_racks.html" class="nav" id="stainless">Stainless Steel Racks</a>
-        <a href="home_items.html" class="nav" id="home">Home Improvement Items</a>
-        <a href="bath_accessories.html" class="nav" id="bath">Bath Accessories</a>
-        <a href="kitchen_materials.html" class="nav" id="kitchen">Kitchen Ware Materials</a>
-    </nav>
     
+        <nav class="product_categories product_nav" id="productNav">
+            <div class="dropdown-icon" onclick="dropDown()">
+                <div class="bar"></div>
+            </div>
+            <div class="dropdown-links">
+                <a href="steel_racks.html" class="nav" id="stainlessItem">Stainless Steel Racks</a>
+                <a href="home_items.html" class="nav" id="homeItem">Home Improvement Items</a>
+                <a href="bath_accessories.html" class="nav" id="bathItem">Bath Accessories</a>
+                <a href="kitchen_materials.html" class="nav" id="kitchenItem">Kitchen Ware Materials</a>
+            </div>
+        </nav>
+    
+    
+    
+        <div class="page_body product_listing">
+            <div class="container">
+                <img src="../IMG/sample.jpg" alt="" class="item product_img">
+                <p class="item description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <input type="submit" name="" id="" class=" item buy_button" value="Buy">
+            </div>
+            <div class="container">
+                <img src="../IMG/sample.jpg" alt="" class="item product_img">
+                <p class="item description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <input type="submit" name="" id="" class=" item buy_button" value="Buy">
+            </div>
+            <div class="container">
+                <img src="../IMG/sample.jpg" alt="" class="item product_img">
+                <p class="item description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <input type="submit" name="" id="" class=" item buy_button" value="Buy">
+            </div>
+            <div class="container">
+                <img src="../IMG/sample.jpg" alt="" class="item product_img">
+                <p class="item description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <input type="submit" name="" id="" class=" item buy_button" value="Buy">
+            </div>
+            <div class="container">
+                <img src="../IMG/sample.jpg" alt="" class="item product_img">
+                <p class="item description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <input type="submit" name="" id="" class=" item buy_button" value="Buy">
+            </div>
+            <div class="container">
+                <img src="../IMG/sample.jpg" alt="" class="item product_img">
+                <p class="item description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <input type="submit" name="" id="" class=" item buy_button" value="Buy">
+            </div>
+        </div>    
+    </div>
+    
+    <footer class="page_footer">Built and Designed by AlH Sim</footer>
+    <script src="../script.js"></script>
 </body>
 </html>
+
+<!-- Built and Designed by AlH Sim -->
