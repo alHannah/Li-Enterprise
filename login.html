@@ -7,37 +7,45 @@
     <title>Li Enterprise</title>
 </head>
 <body>
-    <nav class="page_nav" id="pageNav">
-        <div class="nav-icon" onclick="toggleNav()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+    <div class="main">
+        <nav class="page_nav" id="pageNav">
+            <div class="nav-icon" onclick="toggleNav()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-links">
+                <img src="IMG/logo.jpg" alt="Li_Enterprise_logo" class="li_logo login_logo" id="logo">
+                <a href="index.html" class="nav" id="home">Home</a>
+                <a href="products.html" class="nav" id="products">Products</a>
+                <a href="about_us.html" class="nav" id="about_us">About Us</a>
+                <a href="contact_us.html" class="nav" id="contact_us">Contact Us</a>
+                <a href="login.html" class="nav" id="login">Login</a>
+            </div>
+        </nav>
+    
+    
+    
+        <div class="page_body login_form">
+            <form action="" method="" class="form">
+                <fieldset>
+                    <label for="email" class="form_item email">Email: </label>
+                    <input type="email" id="email" name="email" class="form_item">
+                    <label for="username" class="form_item">Username: </label>
+                    <input type="text" id="username" name="username" class="form_item">
+                    <label for="email" class="form_item password">Password: </label>
+                    <input type="password" id="password" name="password" class="form_item">
+                    <label for="username" class="form_item">Confirm Password: </label>
+                    <input type="password" id="confirm_password" name="username" class="form_item">
+                    <input type="submit" name=sign_up value="Sign Up" class="form_item form_button button">
+                </fieldset>
+            </form>
         </div>
-        <div class="nav-links">
-            <img src="IMG/logo.jpg" alt="Li_Enterprise_logo" class="li_logo login_logo" id="logo">
-            <a href="home.html" class="nav" id="home">Home</a>
-            <a href="products.html" class="nav" id="products">Products</a>
-            <a href="about_us.html" class="nav" id="about_us">About Us</a>
-            <a href="contact_us.html" class="nav" id="contact_us">Contact Us</a>
-            <a href="index.html" class="nav" id="login">Login</a>
-        </div>
-    </nav>
-    <div class="login_form">
-        <form action="" method="">
-            <fieldset>
-                <label for="email" class="form_content email">Email: </label>
-                <input type="email" id="email" name="email" class="form_content">
-                <label for="username" class="form_content">Username: </label>
-                <input type="text" id="username" name="username" class="form_content">
-                <label for="email" class="form_content password">Password: </label>
-                <input type="password" id="password" name="password" class="form_content">
-                <label for="username" class="form_content">Confirm Password: </label>
-                <input type="password" id="confirm_password" name="username" class="form_content">
-                <input type="submit" name=sign_up value="Sign Up" class="form_content form_button button">
-            </fieldset>
-        </form>
     </div>
+    
     <footer class="page_footer">Built and Designed by AlH Sim</footer>
     <script src="script.js"></script>
 </body>
 </html>
+
+<!-- Built and Designed by AlH Sim -->
