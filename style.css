@@ -1,3 +1,84 @@
+/* EDITED */
+
+/* 
+
+----------------------------DESKTOP VIEW-------------------------
+
+File name: index.html
+completed:
+basic form with 
+picture 
+description and 
+button
+
+todo: 
+button for next review
+rating in every review
+
+
+File name: login.html
+completed:
+login form
+email
+username
+password
+confirm password
+signup button
+
+todo:
+functionality
+see password checkbox button
+login form
+
+
+File name: products.html
+completed:
+info for every products
+picture and buy button
+
+todo:
+like button
+add to cart
+filter options
+
+
+File name: about_us.html
+completed:
+image
+description
+
+todo:
+design
+
+File name: contact_us.html
+completed:
+none
+
+todo:
+div for socialmedia platforms
+
+
+----------------------------MOBILE VIEW---------------------
+
+File name: index.html
+
+login page
+
+File name: home.html
+
+
+File name: products.html
+
+
+File name: about_us.html
+
+
+File name: contact_us.html
+
+
+*/
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,15 +87,36 @@
 body {
     background-image: url("IMG/logo.jpg");
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
+    min-height: 98vh;
 }
 
+/* First Div in all HTML pages */
+
+.main {
+    
+    flex: 1;
+}
+
+/* .main_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 600px;
+    flex: 1;
+    background-color: #27374D;
+} */
+
+/* Logo appear in all pages exept Login page */
 
 .li_logo {
     height: 5em;
     border-radius: 50%;
 }
+
+
+/* ------------------------Login Page----------------------- */
 
 .login_logo {
     display: none;
@@ -28,7 +130,8 @@ body {
 }
 
 fieldset{
-    background-color: #27374dd3;
+    border: none !important;
+    background-color: #2e3136d3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,6 +144,7 @@ fieldset{
 label {
     font-size: 24px;
     color: #DDE6ED;
+    width: 50%;
 }
 
 input {
@@ -48,24 +152,17 @@ input {
     color: #27374D;
 }
 
-.page_nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Ensure positioning of the dropdown relative to the nav */
-}
+/* every form item */
 
-.nav-links {
-    flex: 1;
-}
-
-.form_content {
+.form_item {
     margin: 0 10% 0 10%;
 }
 
 .email {
     margin-top: 15%;
 }
+
+/* Button in submit or signup form */
 
 .button {
     margin: 5% 0 15% 0;
@@ -75,6 +172,10 @@ input {
     width: 200px;
     align-self: center;
 }
+
+/* -------------------------------- */
+
+/* For every nav */
 
 .nav-links {
     display: flex;
@@ -93,10 +194,6 @@ input {
 
 .nav:hover {
     text-decoration: underline;
-}
-
-.page_body {
-    flex: 1;
 }
 
 .product_nav {
@@ -118,24 +215,171 @@ input {
 }
 
 footer {
+    text-align: center;
+    color: #DDE6ED;
+    margin: 1em;
+}
+
+/* ------------------------------------------- */
+
+/* ------------------------Home Product Review-------------------------------- */
+
+.home_productreview {
+    background-color: #21262eea;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr;
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.home_productreview_img {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 200px;
+    grid-row: span 2;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.item {
     color: #DDE6ED;
-    padding: 3vw;
+    font-size: 2em;
+    text-align: justify;
 }
 
 
-@media (max-width: 768px) {
-    body {
-        background-color: #9DB2BF;
-    }
+.check_button {
+    height: 90px;
+    width: 200px;
+}
 
+/* -------------------------------------------------------------------------------- */
+
+/* -----------------------------Product Listing---------------------------------------- */
+
+.product_listing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+}
+
+.container {
+    background-color: #27374d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3%;
+}
+
+.product_img {
+    height: 200px;
+}
+
+.description {
+    text-align: justify;
+}
+
+.buy_button {
+    color: #27374D;
+    width: 7em;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* ------------------------Contact Page-------------------------------- */
+
+.contactus_page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    /* margin: 5em; */
+    /* justify-content: center;
+    align-items: center; */
+    border: 1px solid cyan;
+    /* width: fit-content; */
+    gap: 5rem;
+}
+
+.contactus_item {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    /* padding: 5em; */
+}
+
+.contactus_item a {
+    font-size: 25px;
+    color: #e6e8e9;
+    padding: 20px;
+    border: 1px solid green;
+}
+
+.contactus_img {
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------For Menu button-------------------------------- */
+
+.page_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-links {
+    flex: 1;
+}
+
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+
+
+@media (max-width: 768px) {
     fieldset {
         width: 400px;
     }
 
-    /* Menu icon */
+    /* -----------------------ICON-------------- */
 
     .nav-icon {
         display: flex;
@@ -155,12 +399,17 @@ footer {
     .bar {
         background-color: #DDE6ED;
         height: 1vw;
-        width: 4vw; /* Width of each bar */
+        width: 4vw;
     }
 
-    /*  */
+    /* ------------------------------------------- */
 
-    /* Menu design */
+    /* -------------------Menu format--------------------- */
+
+    .li_logo {
+        display: flex;
+        margin-top: 15%;
+    }
 
     .nav-links {
         display: none;
@@ -173,7 +422,7 @@ footer {
     }
 
     .nav-links.show {
-        background-image: linear-gradient(to top, #526d8200, #526d82da, #526d82e1);
+        background-image: linear-gradient(to top, #47637700, #000000da, #000102e1);
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -194,11 +443,9 @@ footer {
         margin-top: 5%;
     }
 
-    /*  */
+    /* ---------------------------------------------------- */
 
-
-
-    /* Drop down icon */
+    /* ---------------------Dropdown icon------------------ */
 
     .dropdown-icon {
         display: flex;
@@ -215,32 +462,36 @@ footer {
         z-index: 1000;
     }
 
+    /* ----------------------------------------------------- */
 
-    /* Drop down Products */
+    /* -----------------Dropdown format----------------------- */
 
     .dropdown-links {
         display: none;
-        /* position: absolute; */
-        /* top: calc(100%); */
-        /* left: 50%; */
-        /* transform: translateX(-50%); */
-        padding: 5%;
-        border-radius: 5px;
     }
 
     .dropdown-links.show {
         background-image: linear-gradient(to top, #526d8200, #526d82da, #526d82e1);
-        width: 90%;
         display: flex;
         flex-direction: column;
-        height: inherit;
+        margin-top: 20vw;
+        font-size: 0.8em;
         gap: 2em;
-        margin-top: 100px;
-        font-size: 10px;
+        border-radius: 5%;
     }
 
-    .li_logo {
-        display: flex;
-        margin-top: 15%;
+    .dropdown {
+        margin-left: 2em;
+        text-align: left;
     }
+
+    #stainlessItem {
+        margin-top: 2em;
+    }
+
+    #kitchenItem {
+        margin-bottom: 2em;
+    }
+
+    /* ------------------------------------------------- */
 }
